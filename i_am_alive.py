@@ -2,6 +2,6 @@ import time
 
 while True:
     
-    print("I'm alive", flush=True)
+    print("I'm alive")
     
     time.sleep(5)

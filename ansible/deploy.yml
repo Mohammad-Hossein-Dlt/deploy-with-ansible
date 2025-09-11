@@ -10,13 +10,13 @@
 
     - name: Copy Python script to server
       copy:
-        src: ../i_am_alive.py
+        src: "{{ playbook_dir }}/../i_am_alive.py"
         dest: /opt/my-python-service/i_am_alive.py
         mode: "0755"
 
     - name: Copy service file to systemd
       copy:
-        src: ../i_am_alive.service
+        src: "{{ playbook_dir }}/../i_am_alive.service"
         dest: /etc/systemd/system/i_am_alive.service
         mode: "0644"
 

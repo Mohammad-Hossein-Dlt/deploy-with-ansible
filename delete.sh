@@ -1,4 +1,4 @@
-sudo rm -rf deploy-with-ansible
+sudo rm -rf ./deploy-with-ansible
 
 sudo systemctl stop i_am_alive.service
 sudo systemctl disable i_am_alive.service

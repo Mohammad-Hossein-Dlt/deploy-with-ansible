@@ -1,5 +1,3 @@
-git 
-
 sudo apt-get install -y git ansible
 
 sudo rm -rf deploy-with-ansible

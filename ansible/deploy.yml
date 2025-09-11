@@ -1,0 +1,30 @@
+- name: Deploy Python script as a systemd service
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Create service directory
+      file:
+        path: /opt/my-python-service
+        state: directory
+        mode: "0755"
+
+    - name: Copy Python script to server
+      copy:
+        src: ../my_script.py
+        dest: /opt/my-python-service/my_script.py
+        mode: "0755"
+
+    - name: Copy service file to systemd
+      copy:
+        src: ../my_script.service
+        dest: /etc/systemd/system/my_script.service
+        mode: "0644"
+
+    - name: Reload systemd
+      command: systemctl daemon-reload
+
+    - name: Enable the service
+      systemd:
+        name: my_script.service
+        enabled: yes
+        state: started

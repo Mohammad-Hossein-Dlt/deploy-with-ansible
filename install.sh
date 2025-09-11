@@ -1,6 +1,6 @@
 sudo apt-get install -y git ansible
 
-sudo rm -rf deploy-with-ansible
+sudo rm -rf ./deploy-with-ansible
 
 git clone https://github.com/Mohammad-Hossein-Dlt/deploy-with-ansible.git
 

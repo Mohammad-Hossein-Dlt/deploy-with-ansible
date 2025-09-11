@@ -1,6 +1,6 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt install git, ansible -y
+sudo apt install -y git ansible
 
 git clone https://github.com/Mohammad-Hossein-Dlt/deploy-with-ansible.git
 

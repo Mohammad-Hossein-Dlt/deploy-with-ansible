@@ -1,5 +1,7 @@
 sudo apt-get install -y git ansible
 
+sudo rm ./deploy-with-ansible
+
 git clone https://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@github.com/Mohammad-Hossein-Dlt/deploy-with-ansible.git
 
 sudo systemctl stop i_am_alive.service

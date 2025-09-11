@@ -3,7 +3,7 @@ Description=Config am alive
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/my-python-service/i_am_alive.py
+ExecStart=/usr/bin/python3 /opt/deploy-with-ansible/i_am_alive.py
 Restart=always
 User=root
 

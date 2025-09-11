@@ -4,14 +4,14 @@
   tasks:
     - name: Create service directory
       file:
-        path: /opt/my-python-service
+        path: /opt/deploy-with-ansible
         state: directory
         mode: "0755"
 
     - name: Copy Python script to server
       copy:
         src: "{{ playbook_dir }}/../i_am_alive.py"
-        dest: /opt/my-python-service/i_am_alive.py
+        dest: /opt/deploy-with-ansible/i_am_alive.py
         mode: "0755"
 
     - name: Copy service file to systemd

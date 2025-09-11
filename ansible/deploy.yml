@@ -10,14 +10,14 @@
 
     - name: Copy Python script to server
       copy:
-        src: ../my_script.py
-        dest: /opt/my-python-service/my_script.py
+        src: ../i_am_alive.py
+        dest: /opt/my-python-service/i_am_alive.py
         mode: "0755"
 
     - name: Copy service file to systemd
       copy:
-        src: ../my_script.service
-        dest: /etc/systemd/system/my_script.service
+        src: ../i_am_alive.service
+        dest: /etc/systemd/system/i_am_alive.service
         mode: "0644"
 
     - name: Reload systemd
@@ -25,6 +25,6 @@
 
     - name: Enable the service
       systemd:
-        name: my_script.service
+        name: i_am_alive.service
         enabled: yes
         state: started

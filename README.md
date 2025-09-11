@@ -1,5 +1,5 @@
 ## To install
 
 ```bash
-bash <(curl -H "Authorization: token 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" -O https://raw.githubusercontent.com/Mohammad-Hossein-Dlt/deploy-with-ansible/main/install.sh)
+bash <(curl -H "Authorization: token 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" -L https://raw.githubusercontent.com/Mohammad-Hossein-Dlt/deploy-with-ansible/main/install.sh)
 ```

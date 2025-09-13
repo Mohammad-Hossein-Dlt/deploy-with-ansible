@@ -13,3 +13,4 @@ sudo systemctl daemon-reload
 sudo systemctl reset-failed
 
 ansible-playbook ./deploy-with-ansible/ansible/deploy.yml
+
